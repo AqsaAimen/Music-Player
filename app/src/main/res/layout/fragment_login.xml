@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login.LoginFragment"
+    android:background="@drawable/background2">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/music2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="90sp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="0sp"
+        android:text=" Welcome to AA Music "
+        android:textColor="#47CFE1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageview1" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="0sp"
+        android:text=" Create your account "
+        android:textColor="#F3EDED"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview1" />
+    <TextView
+        android:layout_marginTop="15sp"
+        android:id="@+id/text22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview2"
+        android:layout_width="0dp"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:textColor="#8E8B8B"
+        android:paddingLeft="25sp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/text22"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="25sp"
+        android:textSize="15sp"
+        android:hint="Enter name"
+        android:paddingLeft="15sp"
+        android:textColorHint="#838181"
+        android:layout_marginRight="22sp"
+        app:layout_constraintStart_toStartOf="@id/text22"/>
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/text3"
+        app:layout_constraintStart_toStartOf="@id/edittext"
+        app:layout_constraintTop_toBottomOf="@id/edittext"
+        android:layout_width="0dp"
+        android:text=" Email "
+        android:textColor="#EFE8E8"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Enter date of birth"
+        android:layout_marginTop="5sp"
+        android:textSize="15sp"
+        android:paddingLeft="15sp"
+        android:textColorHint="#6E6B6E"
+        android:layout_marginRight="18sp"
+        app:layout_constraintStart_toStartOf="@id/text3"/>
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/text4"
+        app:layout_constraintStart_toStartOf="@id/edittext2"
+        app:layout_constraintTop_toBottomOf="@id/edittext2"
+        android:layout_width="0dp"
+        android:text=" Password "
+        android:textColor="#F1EAEA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+    <AutoCompleteTextView
+        android:id="@+id/edittext3"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5sp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Enter Height"
+        android:textSize="15sp"
+        android:paddingLeft="15sp"
+        android:textColorHint="#737272"
+        android:layout_marginRight="18sp"
+        app:layout_constraintStart_toStartOf="@id/text4"/>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="#47CFE1"
+        android:text=" Sign in"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

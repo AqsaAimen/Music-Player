@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background3"
+    tools:context=".MusicPlayer.SongsFragment">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="90sp"
+        android:layout_marginTop="70sp"
+        android:paddingLeft="0sp"
+        android:text=" Welcome to AA Music "
+        android:textColor="#47CFE1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview1"
+        />
+
+    <ImageView
+        android:id="@+id/imageview5"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/icon1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview1"
+        app:layout_constraintTop_toTopOf="@id/view1" />
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="Music Rock"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        app:layout_constraintStart_toEndOf="@id/imageview5"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <ImageView
+        android:id="@+id/imageview6"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/forwardarrow"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_margin="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        />
+
+    <ImageView
+        android:id="@+id/imageview8"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/icon2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/textview7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text=" Music Roby "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintStart_toEndOf="@id/imageview8"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <ImageView
+        android:id="@+id/imageview7"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/forwardarrow"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_margin="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        />
+
+    <ImageView
+        android:id="@+id/imageview9"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/icon3"
+        app:layout_constraintTop_toTopOf="@id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/textview8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text=" Music Roob "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/view3"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintStart_toEndOf="@id/imageview9"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <ImageView
+        android:id="@+id/imageview10"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/forwardarrow"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_margin="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        />
+
+    <ImageView
+        android:id="@+id/imageview11"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/icon4"
+        app:layout_constraintTop_toTopOf="@id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <TextView
+        android:id="@+id/textview11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text=" Music Redio "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/view4"
+        app:layout_constraintBottom_toBottomOf="@id/view4"
+        app:layout_constraintStart_toEndOf="@id/imageview11"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <ImageView
+        android:id="@+id/imageview12"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/forwardarrow"
+        app:layout_constraintBottom_toBottomOf="@id/view4"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

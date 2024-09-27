@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.musicplayer.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_songsFragment"
+            app:destination="@id/songsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songsFragment"
+        android:name="com.example.musicplayer.MusicPlayer.SongsFragment"
+        android:label="fragment_songs"
+        tools:layout="@layout/fragment_songs" >
+        <action
+            android:id="@+id/action_songsFragment_to_songsListFragment"
+            app:destination="@id/songsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songsListFragment"
+        android:name="com.example.musicplayer.MusicPlayer.SongsListFragment"
+        android:label="fragment_songs_list"
+        tools:layout="@layout/fragment_songs_list" >
+        <action
+            android:id="@+id/action_songsListFragment_to_musicPlayerFragment"
+            app:destination="@id/musicPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicPlayerFragment"
+        android:name="com.example.musicplayer.MusicPlayer.MusicPlayerFragment"
+        android:label="fragment_music_player"
+        tools:layout="@layout/fragment_music_player" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.musicplayer.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
